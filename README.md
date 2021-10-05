@@ -8,6 +8,10 @@ If you prefer to use GUI tools for `git` operations, neglect the corresponding c
 
 See the workflow website for detailed information.
 
+
+**Warning**: in order to use the google drive and git as instructed, you need to update your personal configure files for `rclone` and `git` on the **cluster**  first. 
+See the workflow website for detailed information.
+
 1. Logon to the Agave cluster
 
 ```bash
@@ -62,6 +66,7 @@ sbatch repose.sh
 ## To create your own project based on the template 
 
 **Warning**: in order to use git as instructed below, you need to configure `git` first **on your computer**. See the workflow website for detailed information.
+
 1. On GitHub, navigate to the main page of the repository. [chgpu_agave_template](https://github.com/JulianTao/chgpu_agave_template) 
 2. Above the file list, click `Use this template`, which usually appears in green.
 4. Type a name for your repository, and an optional description. The project name should be concise but indicative, e.g., "sample_prep". For a more comprehensive instruction on how to create a repo from a template, check [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) 
@@ -69,6 +74,7 @@ sbatch repose.sh
 
 6. **On your own computer**, clone the new repo. 
 7. Rename the `cpp`,`json`, `sh` files with your project name. 
+
    For example, `repose.cpp` --> `sample_prep.cpp`; `repose.json` --> `sample_prep.json`; and `repose.sh` --> `sample_prep.json`
 8. Edit the source `cpp` and `json` files for your project.
 9. Update the `CMakeList.txt` file:
